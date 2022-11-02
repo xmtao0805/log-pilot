@@ -7,8 +7,7 @@ RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories
 RUN set -ex && apk add --no-cache make git
 WORKDIR $PILOT_DIR
 COPY . $PILOT_DIR
-RUN go env -w GOPROXY=https://goproxy.cn,direct && \
-    go install 
+RUN go install 
 
 FROM alpine:3.6
 
