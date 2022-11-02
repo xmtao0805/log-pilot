@@ -23,7 +23,7 @@ import (
 	"golang.org/x/net/context"
 	"github.com/containerd/containerd"
 	"github.com/containerd/containerd/containers"
-	"github.com/containerd/containerd/api/events"
+	_ "github.com/containerd/containerd/api/events"
 )
 
 /**
